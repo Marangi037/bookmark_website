@@ -1,10 +1,12 @@
 {
-  "name": "lesson05",
+  "name": "bookmark website",
   "version": "1.0.0",
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+  "build": "tailwindcss -i ./input.css -o ./build.css --minify", // For production
+  "dev": "tailwindcss -i ./input.css -o ./build.css --watch"    // For development
+}
     "prettier": "npx prettier --write ./build/*.html"
   },
   "keywords": [],
