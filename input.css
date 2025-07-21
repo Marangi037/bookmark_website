@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+@keyframes open-menu {
+    0%{
+        transform: scaleY(0);
+    }
+    80%{
+        transform: scaleY(1.2)
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+.animate-open-menu{
+    animation: open-menu 0.5s ease-in-out forwards;
+} 
+
+.btn{
+    @apply w-32 h-10 bg-gray-300 duration-500 hover:bg-blue-700 rounded-md shadow-gray-500 shadow-md text-black hover:text-white text-[15px]
+}
+.btn-purple{
+    @apply w-32 h-10 bg-blue-700 duration-500 hover:bg-gray-300 rounded-md shadow-gray-500 shadow-md text-white hover:text-black text-[15px]
+}
+
+/* more info buttons */
+
+.btn-info{
+    @apply w-30 h-8 text-[13px] text-white bg-blue-700 hover:bg-blue-900 transition-all duration-500 rounded-[10px]
+}
+
+/* download extension buttons */
+
+.extension-btn{
+    @apply w-[130px] h-[30px] bg-blue-700 hover:bg-blue-900 transition-all duration-500 text-[10px] font-medium text-white rounded-md
+}
+.rotate-chevron{
+    @apply rotate-180 duration-500 transition-all
+}
